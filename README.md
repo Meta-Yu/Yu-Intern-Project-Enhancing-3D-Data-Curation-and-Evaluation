@@ -4,40 +4,13 @@
 
 > a recipe to jumpstart your exploratory research at FAIR :earth_africa:
 
-# Preparation
-<details > 
-<summary> New to FAIR? Get set up on the cluster & GitHub!
-</summary>
-
-1. Get Access to the FAIR Cluster: [FAIR Clusters Wiki](https://www.internalfb.com/intern/wiki/FAIR/Platforms/Clusters/FAIRClusters/)
-
-2. (Optional But Recommended): Set up Eternal Terminal (ET) to connect to the cluster without passwords (using SSH keys). [ET Wiki](https://www.internalfb.com/intern/wiki/FAIR/Platforms/Clusters/FAIRClusters/Persist_SSH_Connection_with_ET/)
-
-3. Link your github account with Facebook in order to access internal repositories (or make your own!): [FB GitHub Wiki](https://www.internalfb.com/intern/wiki/Open_Source/Contribute_to_FB_OSS_Project/Linking_Your_GitHub_Account/)
-  
-</details> 
-
 # :mate: Installation
 
-1. Create a new repo based on this template 
-     -  <details> <summary> Add to personal repository </summary>  
-      
-        1. Click "Use This Template" [![template](https://github.com/fairinternal/fair-getting-started-recipe/assets/6558776/4aa5005a-7f64-4ea6-acba-cab7563b20ba)](https://github.com/new?owner=fairinternal&template_name=fair-getting-started-recipe&template_owner=fairinternal)
-
-        2. Click "Create a new repository" and select your github has the repository owner. 
-
-        3. Clone your repository to your dev machine with ssh using 'git clone <copied ssh url path>'. If you encounter errors, this [wiki](https://www.internalfb.com/intern/wiki/FAIR/Platforms/Getting_started/fairinternal-github/#how-to-access-github-fro) may be helpful to debug ssh key issues.  
-
-      - <details> <summary> Add to FAIR Internal Repository </summary>  
-      
-        1. Make a new github repository for your project on the FAIR Internal GitHub: [Wiki for FAIR Internal GitHub](https://www.internalfb.com/intern/wiki/FAIR/Platforms/Getting_started/fairinternal-github/)
-
-        2. TODO: how to add template to an existing repo??
-
-      </details>
+1. Install DROID-SLAM:
+  1. Check the requirements and install DROID-SLAM following the GitHub [here]([https://www.internalfb.com/intern/wiki/FAIR/Platforms/Clusters/FAIRClusters/FAIRClusterFAQ/#managing-the-software-en](https://github.com/princeton-vl/DROID-SLAM))
        
 
-2. Install packages in a conda environment
+3. Install packages in a conda environment
     - Conda is a common package management system, and it's recommended that you make a new conda environment for each project, and install all packages (e.g. pytorch, matplotlib) within your project's environment. Conda should be installed on your dev machine, and if needed, you can find more about using conda at FAIR [here](https://www.internalfb.com/intern/wiki/FAIR/Platforms/Clusters/FAIRClusters/FAIRClusterFAQ/#managing-the-software-en) and a command cheat sheet [here](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf). 
     - `cd` into repo directory `cd my_repository`
     - Install a starter set of packages: 
