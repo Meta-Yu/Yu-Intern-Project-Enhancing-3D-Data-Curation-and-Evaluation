@@ -8,7 +8,7 @@
 
 ## 1. Install DROID-SLAM:
   1. Check the requirements and install DROID-SLAM following the GitHub [here](https://github.com/princeton-vl/DROID-SLAM).
-  2. Download the model from google drive: [here]([https://github.com/princeton-vl/DROID-SLAM](https://drive.google.com/file/d/1PpqVt1H4maBa_GbPJp4NwxRsd9jk-elh/view)).
+  2. Download the model from google drive: [https://github.com/princeton-vl/DROID-SLAM](https://drive.google.com/file/d/1PpqVt1H4maBa_GbPJp4NwxRsd9jk-elh/view).
        
 
 3. Install packages in a conda environment
