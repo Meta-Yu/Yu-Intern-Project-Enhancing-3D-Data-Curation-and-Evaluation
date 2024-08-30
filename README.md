@@ -60,14 +60,14 @@
 └── └── pcd_visualization.py/ # utils functions for running inference using DROID-SLAM
 ```
 - Explanation for code:
-  1. inference_on_co3d.py: inference code on CO3D dataset using DROID-SLAM
-  2. inference_on_egoexo_4D.py: inference code on Ego-Exo 4D dataset using DROID-SLAM
-  3. get_pose.py: save the camera poses estimated by DROID-SLAM and access the ground truth camera poses
-  4. trajectory_evaluation.py: evaluate the camera poses estimated by DROID-SLAM
-  5. generate_point_clouds.py: save the point clouds estimated by DROID-SLAM
-  6. normalize_pcd.py: normalize/standarize the estimated and ground truth point clouds
-  7. point_clouds_evaluations.py: evaluate the point clouds estimated by DROID-SLAM
-  8. pcd_visualization.py: visualize the estimated point clouds
+  -- inference_on_co3d.py: inference code on CO3D dataset using DROID-SLAM
+  -- inference_on_egoexo_4D.py: inference code on Ego-Exo 4D dataset using DROID-SLAM
+  -- get_pose.py: save the camera poses estimated by DROID-SLAM and access the ground truth camera poses
+  -- trajectory_evaluation.py: evaluate the camera poses estimated by DROID-SLAM
+  -- generate_point_clouds.py: save the point clouds estimated by DROID-SLAM
+  -- normalize_pcd.py: normalize/standarize the estimated and ground truth point clouds
+  -- point_clouds_evaluations.py: evaluate the point clouds estimated by DROID-SLAM
+  -- pcd_visualization.py: visualize the estimated point clouds
 
 # :file_folder: Data & Storage
 ### Accessing Research Datasets
