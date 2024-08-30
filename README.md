@@ -46,6 +46,8 @@
 
 The repo structures code around three compoenents common to most machine learning research: 1) Data, 2) Model, 3) Experiment Logic
 
+## 1. code for running inference using DROID-SLAM are saved in folder `DROID-SLAM`:
+-
 ```md
 ├── main/ # main code
 │   ├── inference_on_co3d.py
@@ -56,7 +58,7 @@ The repo structures code around three compoenents common to most machine learnin
 │   ├── generate_point_clouds.py
 │   ├── normalize_pcd.py
 │   ├── point_clouds_evaluations.py
-│   └── pcd_visualization.py/ # utils functions for running inference using DROID-SLAM
+└── └── pcd_visualization.py/ # utils functions for running inference using DROID-SLAM
 ```
 
 # :file_folder: Data & Storage
