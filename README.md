@@ -44,7 +44,6 @@
 
 # :ice_cube: Code Organization
 
-
 ## 1. code for running inference using DROID-SLAM are saved in folder `DROID-SLAM`:
 - The repo for `DROID-SLAM` has the following structures:
 ```md
@@ -68,6 +67,59 @@
   - normalize_pcd.py: normalize/standarize the estimated and ground truth point clouds
   - point_clouds_evaluations.py: evaluate the point clouds estimated by DROID-SLAM
   - pcd_visualization.py: visualize the estimated point clouds
+ 
+## 2. code for running inference using DUSt3R are saved in folder `dust3r`:
+- The repo for `dust3r` has the following structures:
+```md
+├── main/ # main code
+│   ├── inference_on_co3d_dust3r.py
+│   └── inference_on_egoexo_4D_dust3r.py /# main inferece code on CO3D and Ego-Exo 4D using DUSt3R
+├── utils/
+│   ├── get_pose_dust3r.py
+│   ├── trajectory_evaluation_dust3r.py
+│   ├── point_clouds_evaluations_dust3r.py
+└── └── ego_exo4d_mask.py/ # utils functions for running inference using DUSt3R
+```
+- Explanation for code:
+  - inference_on_co3d_dust3r: inference code on CO3D dataset using DUSt3R
+  - inference_on_egoexo_4D_dust3r.py: inference code on Ego-Exo 4D dataset using DUSt3R
+  - get_pose_dust3r.py: save the camera poses estimated by DUSt3R and access the ground truth camera poses
+  - trajectory_evaluation_dust3r.py: evaluate the camera poses estimated by DUSt3R
+  - point_clouds_evaluations.py: evaluate the point clouds estimated by DUSt3R
+  - ego_exo4d_mask.py: extract frames and masks information for Ego-Exo 4D
+ 
+## 3. code for running inference using DUSt3R are saved in folder `COLMAP`:
+- The repo for `COLMAP` has the following structures:
+```md
+├── main/ # main code
+│   ├── colmap_co3d_large.sh
+│   ├── colmap_convert_single_co3d.sh
+│   ├── colmap_convert_large_scale.sh
+│   └── inference_on_co3d_colmap.py /# main inferece code on CO3D using COLMAP
+├── colmap_converter/
+│   ├── __init__.py
+│   ├── __main__.py
+│   ├── colmap_utils.py
+│   ├── frames_utils.py
+└── └── metadata_utils.py /# Module for convert estimation from COLMAP into desired format and save into json file
+├── utils/
+│   ├── trajectory_evaluation_colmap.py
+│   ├── point_clouds_evaluations_colmap.py
+│   ├── select_videos.py
+│   ├── select_objects.py
+│   ├── frames_utils.py
+└── └── point_clouds_evaluations_colmap.py/ # utils functions for running inference using COLMAP
+```
+- Explanation for code:
+  - inference_on_co3d_colmap: inference code on CO3D dataset using COLMAP
+  - colmap_co3d_large.sh: run large-sclae inference on CO3D using COLMAP
+  - colmap_convert_single_co3d.sh: convert estimation for single CO3D video from COLMAP into derised format and save in json file
+  - colmap_convert_large_scale.sh: convert estimation for large_scale CO3D videos from COLMAP into derised format and save in json file
+  - colmap_converter: Module for convert estimation from COLMAP into desired format and save into json file
+  - trajectory_evaluation_colmap.py: evaluate the camera poses estimated by COLMAP
+  - point_clouds_evaluations_colmap.py: evaluate the point clouds estimated by COLMAP
+  - select_videos.py & select_objects.py: select objects and videos, save them into separate folder for running COLMAP
+  -  frames_utils.py: selected frames preprocess 
 
 # :file_folder: Data & Storage
 ### Accessing Research Datasets
