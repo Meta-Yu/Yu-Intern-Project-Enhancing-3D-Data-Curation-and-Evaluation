@@ -119,21 +119,19 @@ This repo contains detailed code implementation for Yu's intern project. For mor
   -  frames_utils.py: selected frames preprocess 
 
 # :file_folder: Data & Storage
-### Accessing Research Datasets
-FAIR hosts the majority of common research datasets on the FAIR Cluster, in a folder called datasets01 (`cd /datasets01`). Always check datasets01 before individually downloading a research dataset!
-
-
-
-# :brain: Compute
-There are several types of compute you have access to at FAIR, and this code is designed to allow you to quickly switch between them depending on the scale of your experiment. 
-
-- **Devfair local GPUs**: each devfair has 2-4 GPUs which are shared among a few users of the devfair. This is great for testing code, or running small scale, quick experiments. However, all major experiments should be run on the cluster, which has built-in safety mechanisms for data processing and compute that prevent many job failures. In this codebase, you can run code on the local GPUs by setting mode to 'local'. 
-
-- **FAIR Cluster**: the cluster is the massive set of GPUs which we use for pretty much all experiments. In this codebase, you can run code on the cluster by setting the mode to 'cluster'. You can specify the numer of GPUs or other parameters in the cluster config file (configs/mode/cluster.yaml). Partitions are groups of GPUs on the cluster that are designated for different teams or priority levels. Most FAIR users run their experiments on the general partition called devlab (the default for this repository).  
-
-- **Have a question about compute?** You can look through the [FAIR Cluster Wiki](https://www.internalfb.com/intern/wiki/FAIR/Platforms/Clusters/FAIRClusters/), search the [FAIR Cluster Discussion & Support Workplace Group](https://fb.workplace.com/groups/FAIRClusterUsers/), or ask your managers!
-
+### Accessing Datasets
+1. CO3D dataset can be accessed via `cd /datasets01/co3dv2`.
+2. Ego-Exo 4D dataset can be accessed as follows:
+   1. Via FAIR Cluster: 'cd /datasets01/egoexo4d'
+   2. Ground Truth camera poses can be accessed via:
+   ``` 
+  /checkpoint/xiaodongwang/flow/EgoExo4D/existing_frames/{}/true_poses_on_camera.pt
+   ```
 
 
 # Key Referece
-* DROID-SLAM: https://arxiv.org/abs/2108.10869
+1. DROID-SLAM: https://arxiv.org/abs/2108.10869
+2. DUSt3R: https://arxiv.org/abs/2312.14132
+3. MASt3R: https://arxiv.org/abs/2406.09756
+4. COLMAP: https://colmap.github.io/
+5. Density-aware Chamfer Distance: https://proceedings.neurips.cc/paper/2021/file/f3bd5ad57c8389a8a1a541a76be463bf-Paper.pdf
