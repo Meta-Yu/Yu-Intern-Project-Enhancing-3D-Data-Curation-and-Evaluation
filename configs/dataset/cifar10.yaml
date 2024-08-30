@@ -1,0 +1,5 @@
+# @package _global_
+
+datamodule:
+  _target_: recipe.datasets.CIFAR10
+  batch_size: 32

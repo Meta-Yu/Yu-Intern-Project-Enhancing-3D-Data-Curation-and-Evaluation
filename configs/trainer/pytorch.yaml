@@ -1,0 +1,13 @@
+# @package _global_
+
+trainer:
+  _target_: recipe.train.Trainer
+  optimizer_type: sgd
+  learning_rate: 0.001
+  momentum: 0.9
+  num_train_epochs: 3
+  # optional argument to limit the number of batches used in training
+  # useful for quick tests
+  max_train_batches: null
+  logs_dir: ${logs_dir}
+  device: "cuda:0"
