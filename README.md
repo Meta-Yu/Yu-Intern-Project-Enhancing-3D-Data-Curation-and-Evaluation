@@ -116,7 +116,23 @@ This repo contains detailed code implementation for Yu's intern project. For mor
   - trajectory_evaluation_colmap.py: evaluate the camera poses estimated by COLMAP
   - point_clouds_evaluations_colmap.py: evaluate the point clouds estimated by COLMAP
   - select_videos.py & select_objects.py: select objects and videos, save them into separate folder for running COLMAP
-  -  frames_utils.py: selected frames preprocess 
+  -  frames_utils.py: selected frames preprocess
+ 
+## 4. code for implementing Density-aware Chamfer Distance are saved in folder `dcd`:
+- The repo for `dcd` has the following structures:
+```md
+├── main/ # main code
+│   ├── pcd_rotate.py
+│   └── pcd_translation.py /# main experiment code for evaluating DCD
+├── utils/
+│   ├── ape_calculation.py
+└── └── dcd_implemantion.py/ # utils functions for implementing DCD
+```
+- Explanation for code:
+  - pcd_rotate.py: code for evaluating that DCD is more sensitive to small rotation than CD
+  - pcd_translation.py: code for evaluating that DCD is more sensitive to small translation than CD
+  - ape_calculation.py: functions for computing APE based on rotation and translation error
+  - dcd_implemantion.py: code implementation of DCD
 
 # :file_folder: Data & Storage
 ### Accessing Datasets
