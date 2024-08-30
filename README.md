@@ -44,10 +44,9 @@
 
 # :ice_cube: Code Organization
 
-The repo structures code around three compoenents common to most machine learning research: 1) Data, 2) Model, 3) Experiment Logic
 
 ## 1. code for running inference using DROID-SLAM are saved in folder `DROID-SLAM`:
--
+- The repo for `DROID-SLAM` has the following structures:
 ```md
 ├── main/ # main code
 │   ├── inference_on_co3d.py
@@ -60,6 +59,15 @@ The repo structures code around three compoenents common to most machine learnin
 │   ├── point_clouds_evaluations.py
 └── └── pcd_visualization.py/ # utils functions for running inference using DROID-SLAM
 ```
+- Explanation for code:
+  1. inference_on_co3d.py: inference code on CO3D dataset using DROID-SLAM
+  2. inference_on_egoexo_4D.py: inference code on Ego-Exo 4D dataset using DROID-SLAM
+  3. get_pose.py: save the camera poses estimated by DROID-SLAM and access the ground truth camera poses
+  4. trajectory_evaluation.py: evaluate the camera poses estimated by DROID-SLAM
+  5. generate_point_clouds.py: save the point clouds estimated by DROID-SLAM
+  6. normalize_pcd.py: normalize/standarize the estimated and ground truth point clouds
+  7. point_clouds_evaluations.py: evaluate the point clouds estimated by DROID-SLAM
+  8. pcd_visualization.py: visualize the estimated point clouds
 
 # :file_folder: Data & Storage
 ### Accessing Research Datasets
