@@ -9,24 +9,9 @@
 ## 1. Install DROID-SLAM:
   1. Check the requirements and install DROID-SLAM following the GitHub [DROID-SLAM](https://github.com/princeton-vl/DROID-SLAM).
   2. Download the model from google drive: [droid.pth](https://drive.google.com/file/d/1PpqVt1H4maBa_GbPJp4NwxRsd9jk-elh/view).
-       
 
-3. Install packages in a conda environment
-    - Conda is a common package management system, and it's recommended that you make a new conda environment for each project, and install all packages (e.g. pytorch, matplotlib) within your project's environment. Conda should be installed on your dev machine, and if needed, you can find more about using conda at FAIR [here](https://www.internalfb.com/intern/wiki/FAIR/Platforms/Clusters/FAIRClusters/FAIRClusterFAQ/#managing-the-software-en) and a command cheat sheet [here](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf). 
-    - `cd` into repo directory `cd my_repository`
-    - Install a starter set of packages: 
-      - ```conda create -n fair-recipe --clone /checkpoint/marksibrahim/fair-recipes/fair-recipe-shared && conda activate fair-recipe && pip install -e .```
-    - <details>
-        <summary>Manual Installation (only for the brave)</summary>
-      If you require a particular Python version or libraries not included in the default environment, you can build your own:
-      
-      1. Install conda
-      2. `conda create -n fair-recipe python=3.11`
-      3. `conda activate fair-recipe`
-      4. `pip install torch==2.1 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118` (see [official instructions](https://pytorch.org/get-started/locally/), you need to check your cuda driver with `nvidia-smi` and install a pytorch version that is compatible with yours, see Cuda website for compatibility between version and driver, [example](https://docs.nvidia.com/cuda/archive/12.1.0/cuda-toolkit-release-notes/))
-      5. `pip install pytest submitit hydra-core hydra-submitit-launcher loguru tqdm`
-      6. `pip install -e .`      
-    </details>
+## 2. Install DUSt3R:
+  1. Check the requirements and install DUSt3R following the GitHub [DUSt3R](https://github.com/naver/dust3r).
 
 # :yum: Benefits of this recipe 
 This recipe is designed to provide the backbone code for running scripts on the FAIR cluster. It also contains some quick guides for accessing research datasets and logging experiments! Here are some of the main functions built in:
