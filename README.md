@@ -124,9 +124,9 @@ This repo contains detailed code implementation for Yu's intern project. For mor
 2. Ego-Exo 4D dataset can be accessed as follows:
    1. Via FAIR Cluster: 'cd /datasets01/egoexo4d'
    2. Ground Truth camera poses can be accessed via:
-   ``` 
-  /checkpoint/xiaodongwang/flow/EgoExo4D/existing_frames/{}/true_poses_on_camera.pt
-   ```
+      ```
+      /checkpoint/xiaodongwang/flow/EgoExo4D/existing_frames/{}/true_poses_on_camera.pt
+      ```
 
 
 # Key Referece
