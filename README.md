@@ -47,19 +47,16 @@
 The repo structures code around three compoenents common to most machine learning research: 1) Data, 2) Model, 3) Experiment Logic
 
 ```md
-├── main.py # launcher
-├── recipe/ # main code
-│   ├── datasets.py
-│   ├── model.py
-│   └── train.py/ # experiment logic
-├── configs/
-│   ├── train_defaults.yaml
-│   ├── dataset/
-│   ├── model/
-│   └── mode/ # configs for launching on cluster or locally
-├── tests/
-└── notebooks/ # jupyter notebook
-    └── example.ipynb
+├── main/ # main code
+│   ├── inference_on_co3d.py
+│   └── inference_on_egoexo_4D.py /# main inferece code on CO3D and Ego-Exo 4D using DROID-SLAM 
+├── utils/
+│   ├── get_pose.py
+│   ├── trajectory_evaluation.py
+│   ├── generate_point_clouds.py
+│   ├── normalize_pcd.py
+│   ├── point_clouds_evaluations.py
+│   └── pcd_visualization.py/ # utils functions for running inference using DROID-SLAM
 ```
 
 # :file_folder: Data & Storage
