@@ -118,7 +118,27 @@ This repo contains detailed code implementation for Yu's intern project. For mor
   - select_videos.py & select_objects.py: select objects and videos, save them into separate folder for running COLMAP
   -  frames_utils.py: selected frames preprocess
  
-## 4. code for implementing Density-aware Chamfer Distance are saved in folder `dcd`:
+## 4. code for 3D reconstruction for scenes with moving objects are saved in folder `mast3r`:
+ - The repo for `mast3r` has the following structures:
+```md
+├── main/ # main code
+│   ├── inference_on_co3d_mast3r.py
+│   └── inference_on_egoexo_4D_mast3r.py /# main inferece code on CO3D and Ego-Exo 4D using MASt3R
+├── utils/
+│   ├── get_pose_mast3r.py
+│   ├── trajectory_evaluation_mast3r.py
+│   ├── correspondence_check.py
+└── └── ego_exo4d_mask.py/ # utils functions for running inference using MASt3R
+```
+- Explanation for code:
+  - inference_on_co3d_mast3r: inference code on CO3D dataset using MASt3R
+  - inference_on_egoexo_4D_mast3r.py: inference code on Ego-Exo 4D dataset using MASt3R
+  - get_pose_mast3r.py: save the camera poses estimated by DUSt3R and access the ground truth camera poses
+  - trajectory_evaluation_mast3r.py: evaluate the camera poses estimated by MASt3R
+  - correspondence_check.py: Detect moving objects based on MASt3R
+  - ego_exo4d_mask.py: extract frames and masks information for Ego-Exo 4D
+ 
+## 5. code for implementing Density-aware Chamfer Distance are saved in folder `dcd`:
 - The repo for `dcd` has the following structures:
 ```md
 ├── main/ # main code
@@ -134,15 +154,21 @@ This repo contains detailed code implementation for Yu's intern project. For mor
   - ape_calculation.py: functions for computing APE based on rotation and translation error
   - dcd_implemantion.py: code implementation of DCD
 
+ ## 6. other code saved in folder `auxiliary`:
+
+ - Explanation for code:
+  - check_mask.py: check the quality of masks for Ego-Exo 4D videos.
+  - plot_errors.py: generate summarizing plot for benchmarking SOTA 3D reconstruction models.
+  - plot_metrics_alpha.py: empirical instruction about how to select optimal hyparameter alpha. 
+ 
+
+
 # :file_folder: Data & Storage
 ### Accessing Datasets
 1. CO3D dataset can be accessed via `cd /datasets01/co3dv2`.
 2. Ego-Exo 4D dataset can be accessed as follows:
    1. Via FAIR Cluster: 'cd /datasets01/egoexo4d'
-   2. Ground Truth camera poses can be accessed via:
-      ```
-      /checkpoint/xiaodongwang/flow/EgoExo4D/existing_frames/{}/true_poses_on_camera.pt
-      ```
+   2. Masks for Ego-Exo 4D have to be preprocessed using code from https://github.com/fairinternal/egohowto/tree/main/external/dynamic/monocular.
 
 
 # Key Referece
