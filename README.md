@@ -37,6 +37,9 @@
      --workspace_path
      --use_gpu 0
      ```
+## 5. Install EVO for evaluating camera trajectory
+  1. Check the requirements and install EVO following the GitHub [EVO](https://github.com/MichaelGrupp/evo/tree/master).
+  2. Check files format before using EVO via: [EVO-formats](https://github.com/MichaelGrupp/evo/wiki/Formats).
 
 # :yum: Benefits of this recipe 
 This recipe is designed to provide the backbone code for running scripts on the FAIR cluster. It also contains some quick guides for accessing research datasets and logging experiments! Here are some of the main functions built in:
