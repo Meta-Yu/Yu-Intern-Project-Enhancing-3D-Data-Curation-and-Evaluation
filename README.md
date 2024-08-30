@@ -12,7 +12,9 @@
 
 ## 2. Install DUSt3R:
   1. Check the requirements and install DUSt3R following the GitHub [DUSt3R](https://github.com/naver/dust3r).
-  2. Download a checkpoint `DUSt3R_ViTLarge_BaseDecoder_512_dpt.pth`:`mkdir -p checkpoints/wget https://download.europe.naverlabs.com/ComputerVision/DUSt3R/DUSt3R_ViTLarge_BaseDecoder_512_dpt.pth -P checkpoints/`
+  2. Download a checkpoint `DUSt3R_ViTLarge_BaseDecoder_512_dpt.pth`:
+     
+     ```mkdir -p checkpoints/wget https://download.europe.naverlabs.com/ComputerVision/DUSt3R/DUSt3R_ViTLarge_BaseDecoder_512_dpt.pth -P checkpoints/```
 
 # :yum: Benefits of this recipe 
 This recipe is designed to provide the backbone code for running scripts on the FAIR cluster. It also contains some quick guides for accessing research datasets and logging experiments! Here are some of the main functions built in:
