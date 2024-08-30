@@ -7,7 +7,7 @@
 # :mate: Installation
 
 ## 1. Install DROID-SLAM:
-  1. Check the requirements and install DROID-SLAM following the GitHub [here]([https://www.internalfb.com/intern/wiki/FAIR/Platforms/Clusters/FAIRClusters/FAIRClusterFAQ/#managing-the-software-en](https://github.com/princeton-vl/DROID-SLAM))
+  1. Check the requirements and install DROID-SLAM following the GitHub [here](https://github.com/princeton-vl/DROID-SLAM).
        
 
 3. Install packages in a conda environment
