@@ -1,8 +1,5 @@
-# :plate_with_cutlery: A Getting Started Recipe 
-<a href="https://www.python.org/"><img alt="Python" src="https://img.shields.io/badge/-Python 3.11+-blue?style=for-the-badge&logo=python&logoColor=white"></a>
-<a href="https://black.readthedocs.io/en/stable/"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-black.svg?style=for-the-badge&labelColor=gray"></a>
-
-> a recipe to jumpstart your exploratory research at FAIR :earth_africa:
+# :plate_with_cutlery: Enhancing-3D-Data-Curation-and-Evaluation
+This repo contains detailed code implementation for Yu's intern project. For more details about this project, please refer to [doc](https://docs.google.com/document/d/1d3pc8mGhV6vpq-X5mqVx4hgQLamb4pk5sw6IcTcu21c/edit#heading=h.tpv8ntwk9eaw) and [slides](https://docs.google.com/presentation/d/1hSeTPODO1YXXciAybBdh-ti5hBPs8lWOmUFTfkfewSw/edit#slide=id.g27fbec2f167_0_0).
 
 # :mate: Installation
 
