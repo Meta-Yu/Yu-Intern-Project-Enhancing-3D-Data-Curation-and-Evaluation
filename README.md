@@ -28,6 +28,16 @@
      wget https://download.europe.naverlabs.com/ComputerVision/MASt3R/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth -P checkpoints/
      ```
 
+## 4. Install COLMAP:
+  1. Check the requirements and install MASt3R following the GitHub [COLMAP](https://github.com/colmap/colmap).
+  2. Or run the following commands using devfair:
+     ```
+     colmap automatic_reconstructor
+     --image_path
+     --workspace_path
+     --use_gpu 0
+     ```
+
 # :yum: Benefits of this recipe 
 This recipe is designed to provide the backbone code for running scripts on the FAIR cluster. It also contains some quick guides for accessing research datasets and logging experiments! Here are some of the main functions built in:
 
