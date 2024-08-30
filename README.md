@@ -40,27 +40,7 @@
 ## 5. Install EVO for evaluating camera trajectory
   1. Check the requirements and install EVO following the GitHub [EVO](https://github.com/MichaelGrupp/evo/tree/master).
   2. Check files format before using EVO via: [EVO-formats](https://github.com/MichaelGrupp/evo/wiki/Formats).
-
-# :yum: Benefits of this recipe 
-This recipe is designed to provide the backbone code for running scripts on the FAIR cluster. It also contains some quick guides for accessing research datasets and logging experiments! Here are some of the main functions built in:
-
-:rocket:	Launch an experiment: 
-
-`python main.py -m mode=local`
-
-**Goodies baked in**
-
-:white_check_mark:	 Launch the same code locally or on the cluster easily: `mode=local` or `mode=cluster`
-
-:white_check_mark:	 Sweep over parameters in parallel: `python main.py -m datamodule.batch_size=4,8,16`
-
-:white_check_mark:	 Hydra configs, in human readable, composable `yaml` files: `python main.py -m model=cnn dataset=cifar10`
-
-:white_check_mark:	 Includes a simple `setup.py` to save you from import headaches
-
-:white_check_mark:	 Smart logging that shows function inputs, colors outputs, and tracks timestamps thanks to [Loguru](https://github.com/Delgan/loguru)
-
-:white_check_mark:	 Basic unit tests built-in: `python -m pytest tests/`
+     
 
 # :ice_cube: Code Organization
 
