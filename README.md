@@ -15,6 +15,7 @@
   2. Download a checkpoint `DUSt3R_ViTLarge_BaseDecoder_512_dpt.pth`:
      
      ``` mkdir -p checkpoints
+     
      /wget https://download.europe.naverlabs.com/ComputerVision/DUSt3R/DUSt3R_ViTLarge_BaseDecoder_512_dpt.pth -P checkpoints/ ```
 
 ## 3. Install MASt3R:
@@ -22,6 +23,7 @@
   2. Download a checkpoint `DUSt3R_ViTLarge_BaseDecoder_512_dpt.pth`:
      
      ``` mkdir -p checkpoints/
+     
      wget https://download.europe.naverlabs.com/ComputerVision/MASt3R/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth -P checkpoints/ ```
 
 # :yum: Benefits of this recipe 
