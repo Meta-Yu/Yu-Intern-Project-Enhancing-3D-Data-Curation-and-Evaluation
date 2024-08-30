@@ -135,8 +135,5 @@ There are several types of compute you have access to at FAIR, and this code is 
 
 
 
-# Thanks to
-* Jack Urbaneck, Matthew Muckley, Pierre Gleize, Ashutosh Kumar, Megan Richards, Haider Al-Tahan, Narine Kokhlikyan, Ouail Kitouni, and Vivien Cabannes for contributions and feedback
-* The CIFAR10 [PyTorch Tutorial](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
-) on which the training is based 
-* [Hydra Lightning Template](https://github.com/ashleve/lightning-hydra-template) for inspiration on code organization
+# Key Referece
+* DROID-SLAM: https://arxiv.org/abs/2108.10869
