@@ -85,7 +85,7 @@ This repo contains detailed code implementation for Yu's intern project. For mor
   - point_clouds_evaluations.py: evaluate the point clouds estimated by DUSt3R
   - ego_exo4d_mask.py: extract frames and masks information for Ego-Exo 4D
  
-## 3. code for running inference using DUSt3R are saved in folder `COLMAP`:
+## 3. code for running inference using COLMAP are saved in folder `COLMAP`:
 - The repo for `COLMAP` has the following structures:
 ```md
 ├── main/ # main code
