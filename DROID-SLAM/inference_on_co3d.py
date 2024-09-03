@@ -220,7 +220,7 @@ if __name__ == '__main__':
         
         cur_error = collections.defaultdict(list)
     
-        scene_list = select_object(category_name, number_of_frames=10)
+        scene_list = select_object(category_name, number_of_frames=100)
         # scene_list = ['113_13363_23419']
 
         for scene_name in scene_list:
